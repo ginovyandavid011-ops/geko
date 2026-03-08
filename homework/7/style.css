@@ -1,4 +1,6 @@
-
+Global Resect {
+    box-sizing: border-box;
+}
 .main-title {
     font-size: 36px;
     font-family: Arial, sans-serif;

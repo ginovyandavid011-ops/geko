@@ -1,0 +1,29 @@
+body {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: o;
+}
+
+.arrow {
+    /* uxxankyun */
+    width: 10%;
+    aspect-ratio: 1/1.5;
+    background: #28a745;
+    position: relative;
+    box-sizing: border-box;
+}
+ 
+ .arrow: before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border right: 100px solid transparent;
+    border-bottom: 120px solid #28a745;
+    bottom: 100%;
+    left: 50%;
+    transform:
+    translate(-50%, 0);
+ }
