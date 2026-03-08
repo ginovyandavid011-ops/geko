@@ -15,7 +15,7 @@ body {
     box-sizing: border-box;
 }
  
- .arrow: before {
+ .arrow:{
     position: absolute;
     width: 0;
     height: 0;
