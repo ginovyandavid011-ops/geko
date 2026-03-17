@@ -1,0 +1,62 @@
+:root {
+/* Colors */
+--color-primary: #1572D3;
+--color-primary-bg: #1572D31a;
+--color-black: #000000;
+--color-neutral1-1:#222222;
+--color-neutral1-2:#333333;
+--color-neutral1-3:#444444;
+--color-neutral1-4:#555555;
+--color-neutral1-5:#666666;
+--color-neutral1-6:#777777;
+--color-neutral1-7:#888888;
+--color-white: #ffffff;
+
+/*  Font Sizes */
+
+--fint-size-1: 12px;
+--fint-size-2: 14px;
+--fint-size-3: 16px;
+--fint-size-4: 18px;
+--fint-size-5: 20px;
+--fint-size-6: 24px;
+--fint-size-7: 38px;
+--fint-size-8: 48px;
+--fint-size-9: 64px;
+
+/* Font families */
+
+--font-family-main: "Poppins , sans-serif";
+
+/*  Radius */
+
+--radius-1: 8px;
+--radius-2: 12px;
+--radius-3: 16px;
+--radius-4: 24px;
+--radius-1: calc(infinity * 1px);
+
+/* Transition */
+
+--transition: 0.3s
+}
+
+*, *::before, *::after{
+    margin; 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family-main);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+ul, ol {
+    list-style: none;
+}
