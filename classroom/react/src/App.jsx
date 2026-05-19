@@ -1,15 +1,33 @@
-import React from 'react'
-import Count from './components/Counter/Count'
-import Button from './components/Button/Button'
+import Counter from "./features/counter/Counter";
 
-const App = () => {
+import { useGetPostsQuery } from "./services/api";
+
+function App() {
+  const {
+    data,
+    isLoading,
+    error,
+  } = useGetPostsQuery();
+
   return (
-    <>
-    <Button variant="outline"/>
-    <Button variant="empty"/>
-    <Button variant="fill"/>
-    </>
-  )
+    <div>
+      <Counter />
+
+      <hr />
+
+      <h2>Posts</h2>
+
+      {isLoading && <p>Loading...</p>}
+
+      {error && <p>Error...</p>}
+
+      {data?.slice(0, 5).map((post) => (
+        <p key={post.id}>
+          {post.title}
+        </p>
+      ))}
+    </div>
+  );
 }
 
-export default App
+export default App;    
